@@ -1,1 +1,1 @@
-![Screenshot](/ournewproject/admin.PNG)
+![Screenshot](admin.PNG)
