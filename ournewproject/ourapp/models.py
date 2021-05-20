@@ -27,7 +27,7 @@ class Student(models.Model):
     fullname = models.CharField(max_length=80, default = "")
     year_of_graduation = models.IntegerField()
     department = models.ForeignKey(Department, default = "", on_delete=models.CASCADE)
-    grade = models.ForeignKey(Grade, default = 0, on_delete=models.CASCADE)
+    grade = models.ForeignKey(Grade, default = "", on_delete=models.CASCADE)
     school = models.ForeignKey(School, null=True, on_delete=models.CASCADE, blank=True)
     certificate_type = models.ForeignKey(Certificate_Type, default = "", on_delete=models.CASCADE)
     def __str__(self):
